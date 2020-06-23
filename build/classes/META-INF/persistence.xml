@@ -6,6 +6,8 @@
 	<persistence-unit name="exercicios-jpa">
 	
 	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	
+	<mapping-file>META-INF/consultas.xml</mapping-file>
 	<class>Modelo.basico.Usuario</class> 
 	<class>Modelo.basico.Produto</class>  
 	<class>Modelo.umpraum.Assento</class>
@@ -16,8 +18,12 @@
 	<class>Muitospramuitos.Sobrinho</class>
 	<class>Muitospramuitos.Ator</class>
 	<class>Muitospramuitos.Filme</class>
+	<class>ComposicaoEmbeddable.Endereco</class>	
+	<class>ComposicaoEmbeddable.Fornecedor</class>
+	<class>ComposicaoEmbeddable.Funcionario</class>  
+	<class>Modelo.Heranca.Aluno</class> 
+	<class>Modelo.Heranca.AlunoBolsista</class> 
 	
-	  
 	  <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/curso_java" /> <!-- BD Mane -->

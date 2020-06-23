@@ -5,6 +5,7 @@ import java.util.List;
 import Modelo.basico.Produto;
 import infra.produtoDAO;
 
+
 public class obterProdutos {
 	public static void main(String[] args) {
 		
@@ -20,5 +21,6 @@ public class obterProdutos {
 		dao.fechar();
 	}
 }
+
 
 
